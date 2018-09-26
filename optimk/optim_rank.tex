@@ -1,0 +1,92 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Rank Optimization}
+\author{Lionel Chiron}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Your abstract.
+\end{abstract}
+
+\section{Introduction}
+
+We devise here an analytical solution for the rank optimization for the approximation through random projections.
+This solution is then compared to the numerical approach.
+
+
+
+\section{Some examples to get started}
+
+\subsection{Fillig equation}
+
+\begin{equation}
+      u'= -\frac{u^2}{u^2+v^2}/p
+\end{equation}
+\begin{equation}
+      v'= -\frac{v^2}{u^2+v^2}/n
+\end{equation}
+
+we deduce
+
+\begin{equation}
+    \frac{u'}{u^2} - \frac{v'}{v^2}= p/n
+\end{equation}
+\begin{equation}
+    p u'+n v' = 1
+\end{equation}
+
+it follows
+
+\begin{equation}
+    \frac{1}{u} - \frac{1}{v}= \frac{p}{n}t+k
+\end{equation}
+\begin{equation}
+    p u+n v = t+l
+\end{equation}
+
+Hence
+
+\begin{equation}
+    n(\frac{p}{n}t+k)u^2+((p+n)+(t+l)(\frac{p}{n}t+k))u-(t+l) = 0
+\end{equation}
+
+giving the solution
+
+
+\begin{equation}
+    u = \frac{-(l+t)(at+k)-(n+p)-\sqrt{((l+t)(at+k)+n+p)^2+4n(l+t)(at+k)}}{2n(at+k)}
+\end{equation}
+
+with $a=p/n$
+
+
+
+\subsection{How to add Citations and a References List}
+
+You can upload a \verb|.bib| file containing your BibTeX entries, created with JabRef; or import your \href{https://www.overleaf.com/blog/184}{Mendeley}, CiteULike or Zotero library as a \verb|.bib| file. You can then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|.
+
+%You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX.
+
+We hope you find Overleaf useful, and please let us know if you have any feedback using the help menu above --- or use the contact form at \url{https://www.overleaf.com/contact}!
+
+\bibliographystyle{alpha}
+\bibliography{sample}
+
+\end{document}
