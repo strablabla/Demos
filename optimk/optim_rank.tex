@@ -30,61 +30,49 @@ Your abstract.
 We devise here an analytical solution for the rank optimization for the approximation through random projections.
 This solution is then compared to the numerical approach.
 
-
-
-\section{Some examples to get started}
-
-\subsection{Fillig equation}
+\section{Filling equation}
 
 \begin{equation}
-      u'= -\frac{u^2}{u^2+v^2}/p
+      u'= -\frac{P_su^2}{P_su^2+P_nv^2}/s
 \end{equation}
 \begin{equation}
-      v'= -\frac{v^2}{u^2+v^2}/n
+      v'= -\frac{P_nv^2}{P_su^2+P_nv^2}/n
 \end{equation}
 
 we deduce
 
 \begin{equation}
-    \frac{u'}{u^2} - \frac{v'}{v^2}= p/n
+    \frac{u'}{u^2} - \frac{P_sn}{P_ns} \frac{v'}{v^2}= 0
 \end{equation}
 \begin{equation}
-    p u'+n v' = 1
+    p u'+n v' = -1
 \end{equation}
+
+with $ m = \frac{P_sn}{P_ns} $
 
 it follows
 
 \begin{equation}
-    \frac{1}{u} - \frac{1}{v}= \frac{p}{n}t+k
+    \frac{1}{u} - \frac{m}{v} = k
 \end{equation}
 \begin{equation}
-    p u+n v = t+l
+    p u+n v = l-t
 \end{equation}
 
 Hence
 
 \begin{equation}
-    n(\frac{p}{n}t+k)u^2+((p+n)+(t+l)(\frac{p}{n}t+k))u-(t+l) = 0
+    n(\frac{p}{n}t+k)u^2+((p+n)+(l-t)(\frac{p}{n}t+k))u-(l-t) = 0
 \end{equation}
 
 giving the solution
 
-
 \begin{equation}
-    u = \frac{-(l+t)(at+k)-(n+p)-\sqrt{((l+t)(at+k)+n+p)^2+4n(l+t)(at+k)}}{2n(at+k)}
+    v = \frac{(l-mn-p-t)-\sqrt{(l-mn-p-t)^2+k4n(t-l)}}{2kn}
 \end{equation}
-
-with $a=p/n$
-
-
 
 \subsection{How to add Citations and a References List}
 
-You can upload a \verb|.bib| file containing your BibTeX entries, created with JabRef; or import your \href{https://www.overleaf.com/blog/184}{Mendeley}, CiteULike or Zotero library as a \verb|.bib| file. You can then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|.
-
-%You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX.
-
-We hope you find Overleaf useful, and please let us know if you have any feedback using the help menu above --- or use the contact form at \url{https://www.overleaf.com/contact}!
 
 \bibliographystyle{alpha}
 \bibliography{sample}
