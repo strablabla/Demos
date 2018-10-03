@@ -21,9 +21,7 @@
 \begin{document}
 \maketitle
 
-\begin{abstract}
-Your abstract.
-\end{abstract}
+
 
 \section{Introduction}
 
@@ -42,36 +40,63 @@ This solution is then compared to the numerical approach.
 we deduce
 
 \begin{equation}
-    \frac{u'}{u^2} - \frac{P_sn}{P_ns} \frac{v'}{v^2}= 0
-\end{equation}
-\begin{equation}
-    p u'+n v' = -1
+     \frac{s}{P_s} \frac{u'}{u^2} - \frac{n}{P_n} \frac{v'}{v^2}= 0
 \end{equation}
 
-with $ m = \frac{P_sn}{P_ns} $
+\begin{equation}
+    s u' + n v' = -1
+\end{equation}
+
+with $ \alpha = \frac{s}{P_s} $
+$ \beta = \frac{n}{P_n} $
 
 it follows
 
 \begin{equation}
-    \frac{1}{u} - \frac{m}{v} = k
+    \frac{\alpha}{u} - \frac{\beta}{v} = k
 \end{equation}
+
 \begin{equation}
-    p u+n v = l-t
+    s u + n v = l-t
+\end{equation}
+
+Conditions à $t=0$
+
+\begin{equation}
+    l= s+n
+\end{equation}
+
+\begin{equation}
+    k = \alpha -\beta
+\end{equation}
+
+Returning to our system we have :
+
+\begin{equation}
+    v = \frac{\beta u}{\alpha-ku}
+\end{equation}
+
+\begin{equation}
+    s u + n \frac{\beta u}{\alpha-ku}  = l-t
 \end{equation}
 
 Hence
 
 \begin{equation}
-    n(\frac{p}{n}t+k)u^2+((p+n)+(l-t)(\frac{p}{n}t+k))u-(l-t) = 0
+    -ksu^2+(s\alpha+n\beta+k(l-t))u-\alpha(l-t) = 0
 \end{equation}
 
 giving the solution
 
 \begin{equation}
-    v = \frac{(l-mn-p-t)-\sqrt{(l-mn-p-t)^2+k4n(t-l)}}{2kn}
+    u = \frac{(s\alpha+n\beta+k(l-t))-\sqrt{(s\alpha+n\beta+k(l-t))^2-4ks\alpha(l-t)}}{2ks}
 \end{equation}
 
-\subsection{How to add Citations and a References List}
+With $\mu$ being the ratio of signal retrieved, 
+
+\begin{equation}
+    t_{opt} = \mu\frac{(s-\mu)\alpha + n\beta}{k\mu-\alpha}+l
+\end{equation}
 
 
 \bibliographystyle{alpha}
