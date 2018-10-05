@@ -4,3 +4,14 @@
 * analyse de l'évolution courbe.. très aléat au début , moins dans le bruit..
 * récup les anciennes tentatives..
 * envisager démo ds le cas Sane.. 
+
+4/10/18
+
+* Mettre le début de la démo.. 
+* explications intuitives.. 
+* alpha, beta en plus gros.. 
+* figures comparer entre analytique et récursif.. 
+* mettre code récursif dans le projet.. 
+* décrire les deux comportements asymptotiques.. 
+    * pente en t = 0
+        * déduire formule encore plus simple d'estimation du rang.. ??
