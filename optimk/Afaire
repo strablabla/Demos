@@ -1,6 +1,5 @@
 23/9/18
 
-* comparaison numérique/analytique
 * analyse de l'évolution courbe.. très aléat au début , moins dans le bruit..
 * récup les anciennes tentatives..
 * envisager démo ds le cas Sane.. 
@@ -11,7 +10,10 @@
 * explications intuitives.. 
 * alpha, beta en plus gros.. 
 * figures comparer entre analytique et récursif.. 
-* mettre code récursif dans le projet.. 
 * décrire les deux comportements asymptotiques.. 
     * pente en t = 0
         * déduire formule encore plus simple d'estimation du rang.. ??
+
+5/10/18
+
+arriver à étendre la technique à bcp d'autres problèmes.. 
